@@ -65,9 +65,7 @@ lambdas = matrix(c(1,"lam21", 0, 0, 0, 0, 0, 1, "lam42", "lam52"), nrow = 5, nco
 # The is the model specification
 model = ctModel(type='stanct', 
                 
-                LAMBDA=matrix(lambdas,
-                              nrow = length(regressors), 
-                              ncol = 1), # Forcing the first factor load to be 1
+                LAMBDA=lambdas,
                 
                 n.manifest=length(regressors),
                 
