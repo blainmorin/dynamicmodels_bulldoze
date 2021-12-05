@@ -79,7 +79,7 @@ model = ctModel(type='stanct',
                 
                 n.latent=2,
                 
-                T0MEANS = 0,
+                T0MEANS = matrix(c(0, 0), nrow = 2),
                 
                 latentNames=c('Extertese','Autonomy'),
                 
