@@ -69,11 +69,7 @@ model = ctModel(type='stanct',
                 
                 n.manifest=length(regressors),
                 
-                manifestNames = regressors,
-                
-                MANIFESTMEANS = matrix(manifest,
-                                       nrow = length(regressors), 
-                                       ncol = 1), # Forcing the first mean to be 0
+                manifestNames = regressors, # Forcing the first mean to be 0
                 
                 n.latent=1,
                 
