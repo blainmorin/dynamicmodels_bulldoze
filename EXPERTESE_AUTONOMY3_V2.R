@@ -87,11 +87,11 @@ model = ctModel(type='stanct',
 
 expertese.autonomy = ctStanFit(datalong = dff,
                                ctstanmodel = model,
-                               iter = 4000,
+                               iter = 6000,
                                chains = 4,
                                cores = 4, 
                                optimize = FALSE,
                                nopriors = FALSE,
-                               control = list(max_treedepth = 14, adapt_delta = .95))
+                               control = list(max_treedepth = 15, adapt_delta = .95))
 
 save(expertese.autonomy, file = "EXPERTESE_AUTONOMY3_V2")
