@@ -93,6 +93,6 @@ expertese = ctStanFit(datalong = dff,
                       cores = 4, 
                       optimize = FALSE,
                       nopriors = FALSE,
-                      control = list(max_treedepth = 14, adapt_delta = .95))
+                      control = list())
 
 save(expertese, file = "EXPERTESE_V3_masters_salary")
